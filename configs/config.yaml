@@ -2,11 +2,11 @@ defaults:
   - _self_
   - dataset: zjumocap_377_mono
   - pose_correction: direct
-  - texture: shallow_mlp
+  - texture: sh
   - rigid: skinning_field
   - non_rigid: hashgrid
   - option:
-      - iter15k
+      - iter30k
 
 hydra:
   run:
@@ -96,7 +96,7 @@ pipeline:
 debug_from: -1
 detect_anomaly: false
 test_iterations: []
-test_interval: 2000
+test_interval: 1000
 save_iterations: [30000]
 seed: -1
 checkpoint_iterations: []
